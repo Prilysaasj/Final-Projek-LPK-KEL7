@@ -24,7 +24,7 @@ def calculate_cholesterol(jenis_makanan, nama_makanan, bobot):
 def evaluate_risk(total_cholesterol):
     if total_cholesterol < 200:
         return "Risiko kolesterol rendah."
-    elif 200 <= total_cholesterol <= 239:
+    elif 200 <= total_cholesterol < 240:
         return "Risiko kolesterol sedang."
     else:
         return "Risiko kolesterol tinggi."
@@ -107,9 +107,8 @@ elif selected == 'Panduan Makanan Sehat':
     st.header('❤️‍🩹🥬🥦Panduan Makanan Sehat🥦🥬❤️‍🩹', divider='green')
     st.write('''
             1. Yuk, makan yang rendah lemak jenuh dan kolesterol, seperti buah, sayur, ikan, dan biji-bijian!
-            2. Jauhi makanan olahan berlemak trans dan kolesterol tinggi, contohnya makanan cepat saji.
-            3. Pilih camilan tinggi serat, misalnya oatmeal, kacang, dan biji-bijian.
-            4. Kurangi manis-manisan, makanan olahan, dan minuman bergula.
-            5. Tetap aktif dengan rajin bergerak dan berolahraga.
-            6. Ngobrol sama dokter atau ahli gizi buat rencana makan yang pas buat kesehatanmu.''')
-
+            2. Hindari makanan olahan berlemak trans dan kolesterol tinggi, seperti makanan cepat saji.
+            3. Pilih camilan tinggi serat, seperti oatmeal, kacang, dan biji-bijian.
+            4. Kurangi makanan manis, makanan olahan, dan minuman bergula.
+            5. Tetap aktif dengan bergerak dan berolahraga secara teratur.
+            6. Konsultasikan dengan dokter atau ahli gizi untuk rencana makan yang sesuai dengan kebutuhan kesehatan Anda.''')
