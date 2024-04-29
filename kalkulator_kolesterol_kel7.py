@@ -66,7 +66,8 @@ if selected == 'Perkenalan dan Penjelasan Singkat':
 elif selected == 'Perhitungan Kolesterol':
     st.header('Silahkan isi jenis bahan pangan yang diinginkan', divider='rainbow')
     jenis_makanan = st.selectbox('Pilih Jenis Bahan Pangan', list(cholesterol_values.keys()))
-    nama_makanan = st.selectbox('Pilih jenis makanan', list(cholesterol_values[jenis_makanan].keys()))
+    makanan_list = list(cholesterol_values[jenis_makanan].keys()) # List makanan berdasarkan jenis makanan yang dipilih
+    nama_makanan = st.selectbox('Pilih jenis makanan', makanan_list)
     bobot = st.number_input('Masukkan bobot yang diinginkan (gram)', min_value=1, value=100)
 
     if st.button('Hitung Kolesterol'):
@@ -112,3 +113,4 @@ elif selected == 'Panduan Makanan Sehat':
             4. Kurangi makanan manis, makanan olahan, dan minuman bergula.
             5. Tetap aktif dengan bergerak dan berolahraga secara teratur.
             6. Konsultasikan dengan dokter atau ahli gizi untuk rencana makan yang sesuai dengan kebutuhan kesehatan Anda.''')
+
